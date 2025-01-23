@@ -1,5 +1,5 @@
 //
-//  MitNDEFReader.swift
+//  NDEFReader.swift
 //  ios-lib-nfc
 //
 //  Created by ramirez on 2024/09/06.
@@ -22,7 +22,7 @@ public enum NFCError: Error {
 }
 
 @available(iOS 11.0, *)
-public class MitNDEFReader: MitNDEFBase {
+public class NDEFReader: NDEFBase {
     
     /// Callback function returns an array of NFCNDEFMessage
     private var readHandler: ((Result<[NFCNDEFMessage], Error>) -> Void)?
@@ -59,7 +59,7 @@ public class MitNDEFReader: MitNDEFBase {
     }
 }
 
-extension MitNDEFReader {
+extension NDEFReader {
     
     open override func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
         //

@@ -13,14 +13,14 @@ import CoreNFC
 
 class ViewController: UIViewController {
 
-    var mitReader: MitMyNumberReader!
+    var mitReader: MyNumberReader!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func startScan(_ send: Any?) {
-        self.mitReader = MitMyNumberReader(viewController: self)
+        self.mitReader = MyNumberReader(viewController: self)
         
         // incase if there as any display delay
         DispatchQueue.main.async {

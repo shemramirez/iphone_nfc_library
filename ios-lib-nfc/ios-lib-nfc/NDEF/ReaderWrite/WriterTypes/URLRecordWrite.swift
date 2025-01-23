@@ -13,7 +13,7 @@ import CoreNFC
 /// - Note: please use NFCUtilities.isValidURL() in your app the secure the url
 /// - Note: strucutre - https://www.yourinput.com
 @available(iOS 11.0, *)
-public struct URLRecordWrite: MitPayloadBase {
+public struct URLRecordWrite: PayloadBase {
     // https://www since this is clear URL
     private let header: Data = URIRecordType.httpsWWW.uriShortcut
     

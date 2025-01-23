@@ -1,5 +1,5 @@
 //
-//  MitMyNumberReader.swift
+//  MyNumberReader.swift
 //  ios-lib-nfc
 //
 //  Created by ramirez on 2024/09/19.
@@ -10,7 +10,7 @@ import CoreNFC
 
 // TODO: store data and display
 // iso14431 - iso7816
-public class MitMyNumberReader: MitNFCTagReader {
+public class MyNumberReader: NFCTagReader {
     public func beginScanning() {
         guard self.isScanningEnable else {
                 print("Scanning is currently disabled. Please wait.")

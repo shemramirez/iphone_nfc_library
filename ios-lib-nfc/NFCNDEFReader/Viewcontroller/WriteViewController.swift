@@ -17,8 +17,8 @@ enum WriteType {
 
 class WriteViewController: TextFieldViewController {
 
-    var writer: MitNDEFWrite!
-    var type: MitPayloadBase?
+    var writer: NDEFWrite!
+    var type: PayloadBase?
     var selectedButton: WriteType = .text
 
     @IBOutlet weak var textInput: UITextField!
@@ -36,7 +36,7 @@ class WriteViewController: TextFieldViewController {
         // initialize
         textInput.delegate = self
         textDevInput.delegate = self
-        self.writer = MitNDEFWrite(viewController: self)
+        self.writer = NDEFWrite(viewController: self)
         configureInitialUI()
     }
     

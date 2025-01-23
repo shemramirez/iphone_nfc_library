@@ -1,5 +1,5 @@
 //
-//  MitNFCTagReader.swift
+//  NFCTagReader.swift
 //  ios-lib-nfc
 //
 //  Created by ramirez on 2024/09/13.
@@ -10,7 +10,7 @@ import UIKit
 
 @available(iOS 13.0, *)
 // https://qiita.com/treastrain/items/23d343d2c215ab53ecbf
-open class MitNFCTagReader: NSObject, NFCTagReaderSessionDelegate{
+open class NFCTagReader: NSObject, NFCTagReaderSessionDelegate{
     
     public let viewController: UIViewController?
     internal var session: NFCTagReaderSession?

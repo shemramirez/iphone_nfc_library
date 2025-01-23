@@ -1,5 +1,5 @@
 //
-//  MitReadData.swift
+//  ReadData.swift
 //  ios-lib-nfc
 //
 //  Created by ramirez on 2024/10/03.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct MitReadData {
+public struct ReadData {
     let typeNameFormat: TypeNameFormats
     let payloadType: WellKnownTypeRecord
     let payloadID: Data

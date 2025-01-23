@@ -11,7 +11,7 @@ import CoreNFC
 
 struct ReadView: View {
     
-    @StateObject private var session = MitNDEFReader(viewController: nil)
+    @StateObject private var session = NDEFReader(viewController: nil)
     @State private var alertMessage: String?
     @State private var showAlert: Bool = false
     @State private var ndefMessage: [NFCNDEFMessage]?

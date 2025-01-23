@@ -10,7 +10,7 @@ import CoreNFC
 
 /// - Note: structure https://appstore.com/dev/app
 @available(iOS 11.0, *)
-public struct AppRecordWrite: MitPayloadBase {
+public struct AppRecordWrite: PayloadBase {
     // header for app is https://appstore.com
     private let header: Data = URIRecordType.https.uriShortcut
     private let store: Data = "appstore.com/".stringData

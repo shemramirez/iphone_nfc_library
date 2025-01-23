@@ -1,5 +1,5 @@
 //
-//  MitNDEFBase.swift
+//  NDEFBase.swift
 //  ios-lib-nfc
 //
 //  Created by ramirez on 2024/09/06.
@@ -12,7 +12,7 @@ import Combine
 
 /// https://developer.apple.com/documentation/corenfc/nfcndefmessage
 @available(iOS 11.0, *)
-open class MitNDEFBase: NSObject, ObservableObject{
+open class NDEFBase: NSObject, ObservableObject{
     
     public let viewController: UIViewController?
     public var session: NFCNDEFReaderSession?
@@ -61,7 +61,7 @@ open class MitNDEFBase: NSObject, ObservableObject{
 
 // MARK: - Delegate -
 
-extension MitNDEFBase: NFCNDEFReaderSessionDelegate {
+extension NDEFBase: NFCNDEFReaderSessionDelegate {
     /// Called when the reader session is invalidated due to an error.
     /// - Parameters:
     ///   - session: The NFCNDEFReaderSession that was invalidated.

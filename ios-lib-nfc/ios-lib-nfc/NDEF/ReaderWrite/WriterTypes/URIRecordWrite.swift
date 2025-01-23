@@ -10,7 +10,7 @@ import CoreNFC
 
 /// - Note: structure - "www.input.com"
 @available(iOS 11.0, *)
-public struct URIRecordWrite: MitPayloadBase {
+public struct URIRecordWrite: PayloadBase {
     /// - Note: header = would depend on what is the uri type
     private let header: Data
     

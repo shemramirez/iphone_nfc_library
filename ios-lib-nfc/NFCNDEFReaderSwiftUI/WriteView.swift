@@ -17,7 +17,7 @@ enum WriteTypes: String, CaseIterable {
 
 struct WriteView: View {
     
-    @StateObject private var session = MitNDEFWrite(viewController: nil)
+    @StateObject private var session = NDEFWrite(viewController: nil)
     @State var input: String = ""
 
     var body: some View {

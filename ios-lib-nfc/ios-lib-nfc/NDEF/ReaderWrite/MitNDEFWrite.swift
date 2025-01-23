@@ -1,5 +1,5 @@
 //
-//  MitNDEFWrite.swift
+//  NDEFWrite.swift
 //  ios-lib-nfc
 //
 //  Created by ramirez on 2024/09/06.
@@ -9,13 +9,13 @@ import UIKit
 import CoreNFC
 
 @available(iOS 11.0, *)
-public class MitNDEFWrite: MitNDEFBase {
+public class NDEFWrite: NDEFBase {
     
     /// NDEF session and scan
     /// - Parameters:
     ///   - input: write in the ndef session - i cleared the input
     ///   - singleTag: true = scan single tag and false for multiple tag
-    public func beginWriting(_ input: MitPayloadBase) {
+    public func beginWriting(_ input: PayloadBase) {
         /// - Note: This check the availablilty to scan again it needs to be true
         guard self.isScanningEnabled else {
                 print("Scanning is currently disabled. Please wait.")
@@ -51,7 +51,7 @@ public class MitNDEFWrite: MitNDEFBase {
     
 }
 
-extension MitNDEFWrite {
+extension NDEFWrite {
     open func readerSession(_ session: NFCNDEFReaderSession, didDetect tags: [any NFCNDEFTag]) {
         // the app write only to one tag - check if it only detects on tag
         if tags.count > 1 {

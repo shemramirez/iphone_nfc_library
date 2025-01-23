@@ -11,7 +11,7 @@ import CoreNFC
 // TODO: figure out the need of langauge code
 /// - Note: structure - "text"
 @available(iOS 11.0, *)
-public struct TextRecordWrite: MitPayloadBase {
+public struct TextRecordWrite: PayloadBase {
     // TODO: fix the jp data and add more language
     
     private let header: Data = Data([0x02])

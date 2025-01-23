@@ -1,4 +1,4 @@
-# ios-lib-nfc: IOS NFC - Mit Library
+# ios-lib-nfc: IOS NFC - Library
 - 基本情報はREADME
 
 # NDEF - NFC Data Exchange Format Requirements
@@ -94,7 +94,7 @@ TODO: documentation here
 # LIBRARY - HOW TO USE
 NDEF
  1. To implement the app first is to apply the requirements mention above
- 2. Call the Property MitNDEFReader, MitNDEFWrite
+ 2. Call the Property NDEFReader, NDEFWrite
  3. Initiate the viewcontroller
  4. For reading - call the scanner
     For writing:
@@ -113,7 +113,7 @@ NDEF
             
 NDEFTagReader
  1. To implement the app first is to apply the requirements mention above
- 2. Call the NFCTag you want ex. MitResidenceReader,MitFelicaReader,MitMyNumberReader
+ 2. Call the NFCTag you want ex. ResidenceReader,FelicaReader,MyNumberReader
  3. Initiate
  4. beginScanning
  

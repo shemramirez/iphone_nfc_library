@@ -12,13 +12,13 @@ import ios_lib_nfc
 
 class ViewController: UIViewController {
     
-    var reader: MitNDEFReader!
+    var reader: NDEFReader!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.reader = MitNDEFReader(viewController: self)
+        self.reader = NDEFReader(viewController: self)
         // self.startScan(nil)
     }
     

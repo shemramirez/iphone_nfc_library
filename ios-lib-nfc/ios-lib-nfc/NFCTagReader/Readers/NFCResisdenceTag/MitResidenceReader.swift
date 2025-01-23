@@ -1,5 +1,5 @@
 //
-//  MitResidenceReader.swift
+//  ResidenceReader.swift
 //  ios-lib-nfc
 //
 //  Created by ramirez on 2024/09/19.
@@ -9,7 +9,7 @@ import Foundation
 import CoreNFC
 
 // TODO: store datas and display
-public class MitResidenceReader: MitNFCTagReader {
+public class ResidenceReader: NFCTagReader {
     public func beginScanning() {
         guard self.isScanningEnable else {
                 print("Scanning is currently disabled. Please wait.")

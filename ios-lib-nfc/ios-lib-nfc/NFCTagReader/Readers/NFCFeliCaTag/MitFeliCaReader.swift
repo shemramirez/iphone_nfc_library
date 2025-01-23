@@ -1,5 +1,5 @@
 //
-//  MitFeliCaReader.swift
+//  FeliCaReader.swift
 //  ios-lib-nfc
 //
 //  Created by ramirez on 2024/09/12.
@@ -10,7 +10,7 @@ import CoreNFC
 
 // iso18092
 // sample felica works
-public class MitFeliCaReader: MitNFCTagReader {
+public class FeliCaReader: NFCTagReader {
     
     private var readHandler: ((NFCFeliCaTag?) -> Void)?
 
