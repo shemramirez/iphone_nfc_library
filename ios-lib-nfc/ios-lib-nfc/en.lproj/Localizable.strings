@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  ios-lib-nfc
+
+  Created by ramirez on 2024/09/19.
+  
+*/
+
+// MARK: Alertmessage - Error
+
+"Error_Scan_Title" = "NFC Unavailable";
+"Error_Scan_Message" = "This device is not compatible with NFC scanning. For more information, please check the requirements in the README.";
+"Error_Invalidated" = "Session Invalidated";
+"Error_Multiple_Tag" = "More than 1 tag is detected. Please remove all tags and try again.";
+"Error_Connect" = "Unable to connect to tag.";
+"Error_Query" = "Unable to query the NDEF status of tag.";
+"Error_Compliant" = "Tag is not NDEF compliant.";
+"Error_Empty_Message" = "There is no alert message";
+"Error_NDEFwrite" = "Write NDEF message fail:";
+"Error_ReadOnly" = "Tag is read only";
+"Error_Unknown" = "Unknown NFC tag status";
+"Error_Viewcontroller" = "Error: ViewController not available for alert display";
+
+// MARK: Alertmessage - Success
+"Sucess_Write" = "Write NDEF message successful.";
+
+// MARK: Scan
+"NFC_AlertMessage" = "Hold your phone close to the NFC tag to scan it.";
